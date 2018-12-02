@@ -18,8 +18,6 @@ public class MatrizSimetrica {
 		}
 	}
 	
-
-	
 	public void setValue(int i, int j, boolean value){
 		if(i==j)
 			return;

@@ -14,9 +14,9 @@ public class ProgramaProbadorColoreo {
 	}
 
 	public boolean probador() {
-		HashSet<Integer> cantColores= new HashSet<>();
+		HashSet<Integer> cantColores = new HashSet<>();
+		
 		for (int i = 0; i < grafo.getCantNodos(); i++) {
-			
 			for (int j = 0; j < grafo.getCantNodos(); j++) {
 				if (i != j) {
 					cantColores.add(grafoColoreado.getNodos().get(i).color);
@@ -28,7 +28,7 @@ public class ProgramaProbadorColoreo {
 			}
 		}
 				
-		if(grafoColoreado.getCantColores()!=cantColores.size())
+		if(grafoColoreado.getCantColores() != cantColores.size())
 			return false;
 		
 		return true;
